@@ -1,0 +1,3 @@
+Version 1.0 Stable (Build 160811)
+
+* Initial stable build
