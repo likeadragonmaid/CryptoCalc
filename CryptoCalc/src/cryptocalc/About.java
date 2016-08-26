@@ -79,7 +79,7 @@ public class About extends JFrame {
 		btnGitHub.setBounds(12, 96, 252, 25);
 		contentPane.add(btnGitHub);
 
-		JLabel lblVersionInfo = new JLabel("Version: 1.0 Stable");
+		JLabel lblVersionInfo = new JLabel("Version: 1.1");
 		lblVersionInfo.setFont(new Font("Dialog", Font.BOLD, 14));
 		lblVersionInfo.setBounds(12, 12, 252, 18);
 		contentPane.add(lblVersionInfo);

@@ -1,3 +1,7 @@
-Version 1.0 Stable (Build 160811)
+Version 1.1 (Build 160827)
+
+* Multi Calculator Mode added
+
+Version 1.0 (Build 160811)
 
 * Initial stable build

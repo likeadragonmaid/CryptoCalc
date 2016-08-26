@@ -1,6 +1,6 @@
 CryptoCalc
 
-CryptoCalc is a java application which can generate cryptographic sums of a file.
+CryptoCalc is a java application which can generate cryptographic sums of any file.
 
 Copyright (C) 2016 Dynamic Softwares
 
