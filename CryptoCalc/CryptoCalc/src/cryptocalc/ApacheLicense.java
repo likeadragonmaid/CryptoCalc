@@ -1,5 +1,5 @@
 /*****************************************************************************
- * src/GPLLicense.java: GPLv2 Viewer JFrame for CryptoCalc
+ * src/ApacheLicense.java: Apache License 2.0 Viewer JFrame for CryptoCalc
  *****************************************************************************
  * Copyright (C) 2016 Karanvir Singh
  * 
@@ -21,10 +21,7 @@
 package cryptocalc;
 
 import java.awt.EventQueue;
-import java.io.File;
-import java.io.FileReader;
-import java.io.Reader;
-import java.net.URL;
+import java.io.InputStreamReader;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -32,7 +29,7 @@ import javax.swing.JTextArea;
 import javax.swing.border.EmptyBorder;
 
 @SuppressWarnings("serial")
-public class GPLLicense extends JFrame {
+public class ApacheLicense extends JFrame {
 	JTextArea LicenseViewer;
 	private JPanel contentPane;
 
@@ -40,7 +37,7 @@ public class GPLLicense extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					GPLLicense frame = new GPLLicense();
+					ApacheLicense frame = new ApacheLicense();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -49,27 +46,26 @@ public class GPLLicense extends JFrame {
 		});
 	}
 
-	public GPLLicense() {
-		setTitle("CryptoCalc's License");
+	public ApacheLicense() {
 		setResizable(false);
+		setTitle("Open source licenses");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(100, 100, 550, 500);
+		setBounds(100, 100, 700, 500);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 0, 548, 468);
+		scrollPane.setBounds(0, 0, 698, 468);
 		contentPane.add(scrollPane);
 
 		LicenseViewer = new JTextArea();
 		LicenseViewer.setEditable(false);
 		scrollPane.setViewportView(LicenseViewer);
 		try {
-			URL licenseobj = GPLLicense.class.getResource("/licenses/gpl-2.0.txt");
-			File licenseobj2 = new File(licenseobj.toURI());
-			Reader reader = new FileReader(new File(licenseobj2.toURI()));
+			InputStreamReader reader = new InputStreamReader(
+					getClass().getResourceAsStream("/licenses/Apache License 2.0.txt"));
 			LicenseViewer.read(reader, "");
 		} catch (Exception e) {
 			e.printStackTrace();

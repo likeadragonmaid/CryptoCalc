@@ -1,6 +1,6 @@
 CryptoCalc
 
-CryptoCalc is a java application which can generate cryptographic sums of any file.
+CryptoCalc is a java application which can generate cryptographic sums of a file.
 
 Copyright (C) 2016 Dynamic Softwares
 
@@ -20,7 +20,7 @@ Foundation,Inc.,51 Franklin Street, Fifth Floor, Boston,
 MA 02110-1301 USA.
 
 
-                    GNU GENERAL PUBLIC LICENSE
+	GNU GENERAL PUBLIC LICENSE
                        Version 2, June 1991
 
  Copyright (C) 1989, 1991 Free Software Foundation, Inc., <http://fsf.org/>
