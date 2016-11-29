@@ -1,6 +1,6 @@
 #CryptoCalc
 
-CryptoCalc is a java application which can generate cryptographic hash sums of any file.
+An easy to use cryptographic hash sum calculator.
 
 ## Algorithms supported:
 
