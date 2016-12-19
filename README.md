@@ -1,8 +1,10 @@
-#CryptoCalc
+# CryptoCalc
 
 An easy to use cryptographic hash sum calculator.
 
-![Screenshot](https://raw.githubusercontent.com/kvsjxd/CryptoCalc/gh-pages/images/Screenshot.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/kvsjxd/CryptoCalc/gh-pages/images/Screenshot.png">
+</p>)
 
 ## Algorithms supported:
 
