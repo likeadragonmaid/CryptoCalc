@@ -4,7 +4,7 @@ An easy to use cryptographic hash sum calculator.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/kvsjxd/CryptoCalc/gh-pages/images/Screenshot.png">
-</p>)
+</p>
 
 ## Algorithms supported:
 
