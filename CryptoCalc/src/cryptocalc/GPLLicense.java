@@ -1,7 +1,7 @@
 /*****************************************************************************
  * src/GPLLicense.java: GPLv2 Viewer JFrame for CryptoCalc
  *****************************************************************************
- * Copyright (C) 2016 Karanvir Singh
+ * Copyright (C) 2017 Karanvir Singh
  * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -21,6 +21,7 @@
 package cryptocalc;
 
 import java.awt.EventQueue;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -66,7 +67,7 @@ public class GPLLicense extends JFrame {
 		try {
 			InputStreamReader reader = new InputStreamReader(getClass().getResourceAsStream("/licenses/gpl-2.0.txt"));
 			LicenseViewer.read(reader, "");
-		} catch (Exception e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}

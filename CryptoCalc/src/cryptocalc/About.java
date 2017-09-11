@@ -1,7 +1,7 @@
 /*****************************************************************************
  * src/About.java: About JFrame for CryptoCalc
  *****************************************************************************
- * Copyright (C) 2016 Karanvir Singh
+ * Copyright (C) 2017 Karanvir Singh
  * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -28,6 +28,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.IOException;
+import java.net.URISyntaxException;
 import java.net.URL;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -71,7 +73,7 @@ public class About extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 				try {
 					Desktop.getDesktop().browse(new URL("https://kvsjxd.github.io/CryptoCalc/").toURI());
-				} catch (Exception e) {
+				} catch (IOException | URISyntaxException e) {
 					e.printStackTrace();
 				}
 			}
@@ -95,7 +97,7 @@ public class About extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				try {
 					Desktop.getDesktop().browse(new URL("https://twitter.com/iamkaranvir/").toURI());
-				} catch (Exception e1) {
+				} catch (IOException | URISyntaxException e1) {
 					e1.printStackTrace();
 				}
 			}
