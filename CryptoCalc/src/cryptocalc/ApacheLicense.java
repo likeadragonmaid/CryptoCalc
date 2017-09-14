@@ -21,6 +21,7 @@
 package cryptocalc;
 
 import java.awt.EventQueue;
+import java.awt.Toolkit;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import javax.swing.JFrame;
@@ -48,10 +49,11 @@ public class ApacheLicense extends JFrame {
 	}
 
 	public ApacheLicense() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(ApacheLicense.class.getResource("/graphics/Icon.png")));
 		setResizable(false);
 		setTitle("Open source licenses");
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(100, 100, 700, 500);
+		setBounds(100, 100, 705, 500);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);

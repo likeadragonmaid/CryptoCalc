@@ -21,6 +21,7 @@
 package cryptocalc;
 
 import java.awt.EventQueue;
+import java.awt.Toolkit;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import javax.swing.JFrame;
@@ -48,10 +49,11 @@ public class GPLLicense extends JFrame {
 	}
 
 	public GPLLicense() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(GPLLicense.class.getResource("/graphics/Icon.png")));
 		setTitle("CryptoCalc's License");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(100, 100, 550, 500);
+		setBounds(100, 100, 555, 500);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);

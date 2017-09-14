@@ -33,6 +33,7 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import java.awt.EventQueue;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
 import java.awt.event.ActionListener;
@@ -61,6 +62,7 @@ public class CryptoCalc extends JFrame {
 	}
 
 	public CryptoCalc() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(CryptoCalc.class.getResource("/graphics/Icon.png")));
 		setTitle("CryptoCalc");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
