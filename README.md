@@ -6,6 +6,8 @@ An easy to use cryptographic hash sum calculator.
   <img src="https://raw.githubusercontent.com/kvsjxd/CryptoCalc/gh-pages/images/Screenshot.png">
 </p>
 
+# [Download](https://github.com/kvsjxd/CryptoCalc/releases/download/1.2/CryptoCalc.v1.2.zip)
+
 ## Algorithms supported:
 
 * MD5
