@@ -97,7 +97,7 @@ public class CryptoCalc extends JFrame {
 		JMenu mnLegalInformation = new JMenu("Legal information");
 		mnHelp.add(mnLegalInformation);
 
-		JMenuItem mntmCryptocalcLicense = new JMenuItem("CryptoCalc License");
+		JMenuItem mntmCryptocalcLicense = new JMenuItem("CryptoCalc license");
 		mntmCryptocalcLicense.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				GPLLicense obj = new GPLLicense();
